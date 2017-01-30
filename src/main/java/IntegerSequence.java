@@ -1,6 +1,9 @@
 public class IntegerSequence {
     
     public static void main(String[] args) {
+	
+	int arg1 = -1;
+	IntegerSequence is = new IntegerSequence();
 
         if (args.length != 2) {
 
@@ -14,7 +17,7 @@ public class IntegerSequence {
         }
 
         try {
-            int arg1 = Integer.parseInt(args[1]);
+            arg1 = Integer.parseInt(args[1]);
             if (arg1 < 0) {
                 System.out.println("Integer not in valid range, exiting program.");
                 System.exit(2);
@@ -25,13 +28,13 @@ public class IntegerSequence {
         }
 
         if(args[0].equals("lazy")){
-            int p = lazy(args[1])
+            int p = is.lazy(arg1);
             System.out.println("Lazy(" + args[1] + ") = " + p);
         }
 
         if(args[0].equals("triangle")){
-            int q = triangle(args[1])
-            System.out.println("Tri{" + args[1] + ") = " + q);
+            int q = is.triangle(arg1);
+            System.out.println("Tri{" + arg1 + ") = " + q);
         }
     }
 
