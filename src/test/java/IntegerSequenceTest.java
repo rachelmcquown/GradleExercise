@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import IntegerSequence;
+//import IntegerSequence;
 
 public class IntegerSequenceTest {
     
