@@ -23,9 +23,23 @@ public class IntegerSequence {
             System.out.println("Second argument not an integer, exiting program.");
             System.exit(2);
         }
+
+        if(args[0].equals("lazy")){
+            int p = lazy(args[1])
+            System.out.println("Lazy(" + args[1] + ") = " + p);
+        }
+
+        if(args[0].equals("triangle")){
+            int q = triangle(args[1])
+            System.out.println("Tri{" + args[1] + ") = " + q);
+        }
     }
 
     public int triangle(int n){
+        if(n == 0){
+            return 0;
+        }
+
         if(n == 1){
             return 1;
         }
