@@ -24,4 +24,17 @@ public class IntegerSequence {
             System.exit(2);
         }
     }
+
+    public int triangle(int n){
+        if(n == 1){
+            return 1;
+        }
+        return n +(n-1);
+    }
+
+    public int lazy(int n){
+        int p = 0;
+        p = ((n*n)+n+2)/2;
+        return p;
+    }
 }
