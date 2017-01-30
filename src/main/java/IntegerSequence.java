@@ -46,7 +46,7 @@ public class IntegerSequence {
         if(n == 1){
             return 1;
         }
-        return (n(n+1))/2;
+        return (n*(n+1))/2;
     }
 
     public int lazy(int n){
